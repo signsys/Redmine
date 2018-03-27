@@ -9,6 +9,8 @@ services:
                - 3000:3000
           volumes:
                - ./redmine/files:/usr/src/redmine/files
+               - ./redmine/plugins:/usr/src/redmine/plugins
+               - ./redmine/public/themes:/usr/src/redmine/public/themes
           environment:
                REDMINE_DB_MYSQL: db
                REDMINE_DB_PASSWORD: redmine
