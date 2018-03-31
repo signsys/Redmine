@@ -70,14 +70,3 @@ $ sudo vi configuration.yml
 $ sudo docker cp ./configuration.yml redmine:/usr/src/redmine/config/
 $ sudo docker-compose restart
 ```
-MySQL 전체 백업
-```
-$ cd ~
-$ sudo docker exec docker_db_1 sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' > ./all-databases.sql
-```
-MySQL 전체 복구
-```
-$ sudo docker cp ./all-databases.sql docker_db_1:/
-$ sudo docker exec -it docker_db_1 bash
-# mysql -uroot -p < all-databases.sql
-```
