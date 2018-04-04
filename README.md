@@ -70,7 +70,8 @@ $ sudo vi configuration.yml
 $ sudo docker cp ./configuration.yml redmine:/usr/src/redmine/config/
 $ sudo docker-compose restart
 ~~~
-기본입력
+기본 데이터 입력
 ~~~
+$ sudo docker exec -it redmine bash
+# rake redmine:load_default_data RAILS_ENV=production
 ~~~
-  
