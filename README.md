@@ -70,3 +70,7 @@ $ sudo vi configuration.yml
 $ sudo docker cp ./configuration.yml redmine:/usr/src/redmine/config/
 $ sudo docker-compose restart
 ~~~
+기본입력
+~~~
+~~~
+  
