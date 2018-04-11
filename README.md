@@ -10,6 +10,7 @@ Docker 및 Redmine 디렉토리 생성
 ~~~
 $ cd /srv
 $ sudo mkdir docker
+$ sudo chmod 757 docker
 $ cd docker
 $ sudo mkdir redmine
 $ sudo chmod 757 redmine
